@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Major_Mono_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Major_Mono_Display({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
