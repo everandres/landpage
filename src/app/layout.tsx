@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Major_Mono_Display } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Major_Mono_Display({
+const inter = Roboto_Mono({
   subsets: ["latin"],
+  weight: ["400", "700"],
   variable: "--font-inter",
-  display: "swap",
-  weight: "400",
 });
 
 export const metadata: Metadata = {
